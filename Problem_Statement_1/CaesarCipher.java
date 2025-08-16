@@ -1,20 +1,23 @@
 import java.util.*;
 import java.lang.Character;
 public class CaesarCiphar {
+    //this function shifts for both positive and negative values of n
     public static StringBuilder shift(String str, int n){
-        //halding 0 shift
+        //handling 0 shift
         if(n==0){
             return new StringBuilder(str);
         }
         StringBuilder ans = new StringBuilder();
         for(int i=0;i<str.length();i++){
             char curr=str.charAt(i);
+            //checking if the character is letter
             if(Character.isLetter(curr)){
                 int charnum= (int)curr+n;
+                //checking if there is any need for wraping around to the beginning
                 if((charnum>=65 && charnum<=90)||(charnum>=97 && charnum<=122)){
                     ans.append((char)charnum);
                 }
-                else if(curr>='A'&&curr<='Z'){
+                else if(curr>='A'&&curr<='Z'){//simple +26 and -26 handles the need of wrapping
                     if(charnum<65){
                         charnum+=26;
                         ans.append((char)charnum);
@@ -46,6 +49,7 @@ public class CaesarCiphar {
         System.out.print("Press 1 to Code and 2 to Decode");
         int op=sc.nextInt();
         sc.nextLine();
+        //asking to the user to code or decode the string
         if(op==1){
             System.out.print("Type the String:");
             String str= sc.nextLine();
