@@ -7,6 +7,14 @@ public class CaesarCiphar {
         if(n==0){
             return new StringBuilder(str);
         }
+        //halndling n greater than 26
+        while(n>26){
+            n-=26;
+        }
+        //handling n less than -26
+        while(n<-26){
+            n+=26;
+        }
         StringBuilder ans = new StringBuilder();
         for(int i=0;i<str.length();i++){
             char curr=str.charAt(i);
