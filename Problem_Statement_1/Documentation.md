@@ -1,5 +1,5 @@
 --->>Introduction<<----
-Hello I am AbhishekVerma from the Engineering Physics department, BTech 1st year. Below is a breakdown of how the CaesarCiphar class works, step by step.
+-Hello I am AbhishekVerma from the Engineering Physics department, BTech 1st year. Below is a breakdown of how the CaesarCiphar class works, step by step.
 
 --->>Class Structure<<---
 - The class is named CaesarCiphar.
@@ -9,10 +9,10 @@ Hello I am AbhishekVerma from the Engineering Physics department, BTech 1st year
 
 
 --->>The Shift Method<<---
-This method takes two parameters:
+-This method takes two parameters:
 - str: the input string to encode or decode.
 - n: the number of positions to shift (positive for encoding, negative for decoding).
-Key steps inside shift:
+-Key steps inside shift:
 - Zero-shift handling
 - If n == 0, the original string is returned immediately.
 - Normalizing the shift value
@@ -33,7 +33,7 @@ Key steps inside shift:
 
 
 --->>The Main Method<<---
-This method manages user input and output:
+-This method manages user input and output:
 - Prompt for operation
 - Displays “Press 1 to Code and 2 to Decode”
 - Reads an integer op.
