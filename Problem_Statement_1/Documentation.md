@@ -1,14 +1,14 @@
 --->>Introduction<<----
 Hello I am AbhishekVerma from the Engineering Physics department, BTech 1st year. Below is a breakdown of how the CaesarCiphar class works, step by step.
 
----<<Class Structure>>---
+--->>Class Structure<<---
 - The class is named CaesarCiphar.
 - It contains two main parts:
 - A static method shift that performs the core cipher logic.
 - A main method that handles user interaction and calls shift.
 
 
----<<The Shift Method>>---
+--->>The Shift Method<<---
 This method takes two parameters:
 - str: the input string to encode or decode.
 - n: the number of positions to shift (positive for encoding, negative for decoding).
@@ -32,7 +32,7 @@ Key steps inside shift:
 - A StringBuilder containing the shifted text.
 
 
----<<The Main Method>>---
+--->>The Main Method<<---
 This method manages user input and output:
 - Prompt for operation
 - Displays “Press 1 to Code and 2 to Decode”
